@@ -1,4 +1,3 @@
-# caesar.py
 import tkinter
 import customtkinter as ctk
 from utils import Tooltip, copy_to_clipboard

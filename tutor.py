@@ -1,10 +1,9 @@
-# tutor.py
 import customtkinter as ctk
 
 class TutorTab:
     def __init__(self, app, parent):
         frame = ctk.CTkFrame(parent); frame.pack(padx=10, pady=10, fill="both", expand=True)
-        ctk.CTkLabel(frame, text="📘 Интерактивный учебник", font=ctk.CTkFont(size=16, weight="bold")).pack(anchor="w", padx=6, pady=(0,6))
+        ctk.CTkLabel(frame, text="База знаний", font=ctk.CTkFont(size=16, weight="bold")).pack(anchor="w", padx=6, pady=(0,6))
 
         container = ctk.CTkFrame(frame); container.pack(fill="both", expand=True, padx=6, pady=6)
         container.grid_rowconfigure(0, weight=1); container.grid_columnconfigure(0, weight=1)

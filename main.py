@@ -1,4 +1,3 @@
-# main.py
 import customtkinter as ctk
 import tkinter
 from utils import resource_path, bind_context_menus
@@ -17,13 +16,13 @@ class CryptoGRAD(ctk.CTk):
         except Exception:
             pass
         super().__init__()
-        self.title("КриптоГРАД — обучающий криптографический стенд")
+        self.title("CryptoGRAD - Environment for Cryptographic Modeling")
 
         # Верхняя панель
         topbar = ctk.CTkFrame(self); topbar.pack(fill="x")
         ctk.CTkLabel(
             topbar,
-            text="🔐 КриптоГРАД — стенд для обучения криптографии",
+            text="🔐 CryptoGRAD - Environment for Cryptographic Modeling",
             font=ctk.CTkFont(size=16, weight="bold"),
         ).pack(side="left", padx=10, pady=6)
         self.status = ctk.CTkLabel(topbar, text="Программа готова к работе", anchor="e")
@@ -35,8 +34,8 @@ class CryptoGRAD(ctk.CTk):
         self.tab_caesar = self.tabview.add("Шифр Цезаря")
         self.tab_rsa    = self.tabview.add("RSA")
         self.tab_aes    = self.tabview.add("AES")
-        self.tab_prac   = self.tabview.add("Практика")
-        self.tab_tutor  = self.tabview.add("Учебник")
+        self.tab_prac   = self.tabview.add("Полигон")
+        self.tab_tutor  = self.tabview.add("База знаний")
 
         # Внедрение вкладок
         self.caesar = CaesarTab(self, self.tab_caesar, self.set_status)

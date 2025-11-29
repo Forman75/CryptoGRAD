@@ -1,4 +1,3 @@
-# practice.py
 import random, tkinter
 import customtkinter as ctk
 
@@ -6,11 +5,11 @@ class PracticeTab:
     def __init__(self, app, parent, set_status, caesar_fn):
         self.app=app; self.set_status=set_status; self.caesar_cipher=caesar_fn
         frame = ctk.CTkFrame(parent); frame.pack(padx=10, pady=10, fill="both", expand=True)
-        ctk.CTkLabel(frame, text="Практические задания", font=ctk.CTkFont(size=15, weight="bold")).pack(anchor="w", pady=(0,6))
+        ctk.CTkLabel(frame, text="Полигон", font=ctk.CTkFont(size=15, weight="bold")).pack(anchor="w", pady=(0,6))
 
-        # Цезарь-испытание
+        # Полигон
         cz = ctk.CTkFrame(frame); cz.pack(fill="x", pady=8)
-        ctk.CTkLabel(cz, text="Цезарь: испытание", font=ctk.CTkFont(size=13, weight="bold")).pack(anchor="w", padx=6, pady=(6,2))
+        ctk.CTkLabel(cz, text="Криптоанализ перехваченного сообщения", font=ctk.CTkFont(size=13, weight="bold")).pack(anchor="w", padx=6, pady=(6,2))
         self.task_lbl = ctk.CTkLabel(cz, text="Нажмите «Новая задача»"); self.task_lbl.pack(anchor="w", padx=6)
         row = ctk.CTkFrame(cz); row.pack(fill="x", padx=6, pady=6)
         ctk.CTkButton(row, text="Новая задача", command=self._new).pack(side="left", padx=4)
@@ -83,13 +82,13 @@ class PracticeTab:
         ok_shift = (user_shift % 33) == (self._shift_secret % 33)
         ok_text  = (user_answer.upper()==self._secret.upper()) if user_answer else False
         if ok_shift and ok_text:
-            self.feedback.configure(text="✅ Верно! Сдвиг и текст совпадают.")
+            self.feedback.configure(text="✅ Верификация успешна. Параметры совпадают.")
         elif ok_shift:
             self.feedback.configure(text="🟡 Сдвиг верный, но текст не совпал.")
         elif ok_text:
             self.feedback.configure(text="🟡 Текст верный, но сдвиг неверный.")
         else:
-            self.feedback.configure(text="❌ Пока неверно. Попробуйте ещё!")
+            self.feedback.configure(text="❌ Ошибка валидации данных!")
 
     # Викторины
     def _check_aes(self):

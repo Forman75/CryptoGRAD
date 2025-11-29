@@ -1,4 +1,3 @@
-# utils.py
 import os, sys, tkinter
 import customtkinter as ctk
 from tkinter import messagebox

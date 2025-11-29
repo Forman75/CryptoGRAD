@@ -1,4 +1,3 @@
-# rsa.py
 import threading
 import customtkinter as ctk
 from tkinter import messagebox

@@ -1,11 +1,10 @@
-# animations.py
 import math
 import tkinter
 import customtkinter as ctk
 
 # Вспомогательные функции
 def _bbox_union(canvas, items):
-    #Общий bbox группы canvas-элементов: (x0,y0,x1,y1) или None.
+    #Общий bbox группы canvas-элементов: (x0,y0,x1,y1) или None
     if not items:
         return None
     try:

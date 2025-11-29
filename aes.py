@@ -1,4 +1,3 @@
-# aes.py
 import customtkinter as ctk
 from tkinter import messagebox
 from Crypto.Cipher import AES
@@ -83,7 +82,6 @@ class AESTab:
         return iv, None, f"{label}={iv.hex()}"
 
     # анимации
-
     def _anim_encrypt_full(self):
         mode = self.mode_box.get()
         key, err = self._get_key()
