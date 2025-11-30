@@ -34,7 +34,7 @@ class CryptoGRAD(ctk.CTk):
         self.tab_caesar = self.tabview.add("Шифр Цезаря")
         self.tab_rsa    = self.tabview.add("RSA")
         self.tab_aes    = self.tabview.add("AES")
-        self.tab_prac   = self.tabview.add("Полигон")
+        self.tab_prac   = self.tabview.add("Симуляция")
         self.tab_tutor  = self.tabview.add("База знаний")
 
         # Внедрение вкладок

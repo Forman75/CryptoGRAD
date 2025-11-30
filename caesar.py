@@ -22,7 +22,7 @@ class CaesarTab:
         self.app = app; self.set_status = set_status
         frame = ctk.CTkFrame(parent); frame.pack(padx=10, pady=10, fill="both", expand=True)
         ctk.CTkLabel(
-            frame, text="Шифр Цезаря — поддерживаются русский и английский алфавиты.\nАнимация на алфавитных панелях.",
+            frame, text="Шифр Цезаря — поддерживаются русский и английский алфавиты.\nАнимация на алфавитных панелях. \nЯвляется примером устаревших систем шифрования.",
             font=ctk.CTkFont(size=14, weight="bold"), justify="left"
         ).pack(pady=10)
 
