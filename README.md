@@ -1,4 +1,4 @@
-# 🔐 CryptoGRAD — обучающий криптографический стенд
+# CryptoGRAD — обучающий криптографический стенд
 ---
 
 ## 🇷🇺 Описание
@@ -8,25 +8,25 @@
 
 ---
 
-## ✨ Возможности
+## Возможности
 
-* 🎞️ **Анимации шифрования и расшифрования**:
+* **Анимации шифрования и расшифрования**:
 
   * **Цезарь** — рус/англ алфавиты, подсветка символов и сдвига.
   * **RSA (OAEP/SHA-1)** — от исходного текста до шифртекста и обратно, с диаграммами.
   * **AES (ECB/CBC/CTR/GCM)** — конвейерные схемы, XOR, счётчики, теги GCM.
-* 🧪 **Практика**:
+* **Практика**:
 
   * Задачи по Цезарю (брутфорс-подсказки, проверка ответов).
-* 📚 **Учебник**:
+* **Учебник**:
 
-* 🧰 **Удобный интерфейс**:
+* **Удобный интерфейс**:
 
   * Тёмная тема, всплывающие подсказки, контекстное меню (копировать/вставить), отдельные окна с результатами.
 
 ---
 
-## 🚀 Установка и запуск
+## Установка и запуск
 
 ### Требования
 
@@ -66,7 +66,7 @@ python main.py
 
 ---
 
-## 🧭 Навигация по приложению
+## Навигация по приложению
 
 * **Шифр Цезаря** — введите текст, задайте сдвиг, запустите анимацию шифрования/расшифрования.
 * **RSA (OAEP)** — сгенерируйте ключи или вставьте свои (PEM), введите текст/HEX и запустите анимацию.
@@ -80,7 +80,7 @@ python main.py
 
 ---
 
-## 🔐 Безопасность
+## Безопасность
 
 * RSA использует **OAEP (SHA-1)** в образовательной анимации, что совместимо с большинством реализаций (в учебных целях).
 * AES поддерживает корректные размеры IV/Nonce в соответствующих режимах.
@@ -90,7 +90,7 @@ python main.py
 
 ---
 
-## 🧩 Дорожная карта
+## Дорожная карта
 
 * [ ] Расширенные задания (RSA/AES), автогенерация наборов.
 * [ ] Поддержка OAEP с SHA-256 в интерактивной анимации.
@@ -98,14 +98,14 @@ python main.py
 
 ---
 
-## 🤝 Вклад
+## Вклад
 
 PR’ы приветствуются!
 Сначала создайте issue с описанием улучшений или ошибок, затем присылайте Pull Request.
 
 ---
 
-# 🔐 CryptoGRAD — cryptography learning workstation
+# CryptoGRAD — cryptography learning workstation
 
 ## 🇬🇧 Overview
 
@@ -114,25 +114,25 @@ It focuses on **step-by-step educational animations**, **clear visual pipelines*
 
 ---
 
-## ✨ Features
+## Features
 
-* 🎞️ **Animations** for encryption and decryption:
+* **Animations** for encryption and decryption:
 
   * **Caesar** — RU/EN alphabets, character shift highlighting.
   * **RSA (OAEP/SHA-1)** — from plaintext to ciphertext and back, with diagrams.
   * **AES (ECB/CBC/CTR/GCM)** — pipeline visuals: XOR, counters, GCM tags.
-* 🧪 **Practice**:
+* **Practice**:
 
   * Caesar challenges (bruteforce hints, answer checks).
-* 📚 **Tutor**:
+* **Tutor**:
 
-* 🧰 **UX niceties**:
+* **UX niceties**:
 
   * Dark theme, tooltips, context menu (copy/paste), separate result windows.
 
 ---
 
-## 🚀 Installation & Run
+## Installation & Run
 
 ### Requirements
 
@@ -169,7 +169,7 @@ python main.py
 
 ---
 
-## 📦 One-file build (PyInstaller)
+## One-file build (PyInstaller)
 
 ```bash
 pip install pyinstaller
@@ -181,7 +181,7 @@ pyinstaller --noconsole --onefile --add-data "assets;assets" main.py
 
 ---
 
-## 🧭 App structure
+## App structure
 
 * **Caesar** — type text, set shift, run animation (encrypt/decrypt).
 * **RSA (OAEP)** — generate or paste PEM keys, type text/HEX, run animation.
@@ -195,7 +195,7 @@ pyinstaller --noconsole --onefile --add-data "assets;assets" main.py
 
 ---
 
-## 🔐 Security notes
+## Security notes
 
 * RSA animation uses **OAEP (SHA-1)** for compatibility in educational context.
 * AES modes use proper IV/Nonce sizes.
@@ -205,7 +205,7 @@ pyinstaller --noconsole --onefile --add-data "assets;assets" main.py
 
 ---
 
-## 🧩 Roadmap
+## Roadmap
 
 * [ ] More tasks (RSA/AES) with auto-generated datasets.
 * [ ] OAEP with SHA-256 in interactive animation.
@@ -213,12 +213,7 @@ pyinstaller --noconsole --onefile --add-data "assets;assets" main.py
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 PRs are welcome!
 Please open an issue to discuss improvements/bugs before submitting a PR.
-
-
----
-
-**Happy learning & hacking (the good kind)!** ✨🔐
